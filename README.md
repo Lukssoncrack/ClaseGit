@@ -1,2 +1,0 @@
-# ClaseGit
-tomas y max
