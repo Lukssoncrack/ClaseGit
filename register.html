@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css"> 
     <title>Document</title>
 </head>
 <body>
@@ -25,10 +25,30 @@
         
         <div class="search-container">
             <input type="text" id="search" placeholder="Buscar...">
-            <button onclick="search()">Buscar</button>
+            <button onclick="search()" e>Buscar</button>
         </div>
 
         
+<section>
+
+    <form action="search-results.html" method="get">
+        <label>Nombre:</label>
+        <input name="usario" type="text" value="">
+        <label>Email:</label>
+        <input name="email" type="email" value="">
+        <label>Telefono:</label>
+        <input name="Telefono" type="number" value="">
+        <label>Contraseña:</label>
+        <input name="pass" type="password" value="">
+        <p>Confirmar condiciones</p>
+        <label>SI</label>
+        <input type="radio" name="terminos" value="si" checked>
+        <label>NO</label>
+        <input name="radio" name="terminos" value="no">
+        <button type="submit">Enviar</button>
+    </form>
+
+</section>
         
     </header>
 
