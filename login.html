@@ -24,10 +24,22 @@
         </nav>
 
         
-        <div class="search-container">
-            <input type="text" id="search" placeholder="Buscar...">
-            <button onclick="search()">Buscar</button>
-        </div>
+        <form  class="fondoForms" action="./index.html" method="get">
+            
+   <div class="form">
+            <label>Email:</label>
+            <input name="email" type="email" id="email" value="">
+            <div class="invalid-feedback email"></div>
+            <label>Contraseña:</label>
+            <input name="pass" type="password" id="password" value="">
+            <div class="invalid-feedback password"></div>
+            <p>¿Aún no tienes cuenta? 
+                <a href="./register.html">No tengo cuenta</a>
+            </p></div>
+            <div class="bottom">
+            <button  type="submit" class="btn btn-success">ENVIAR</button></div>
+            <a href="./index.html"></a>
+        </form>
         
     </header>
 
@@ -40,6 +52,6 @@
     <footer>
         <p>Equipo: Tomas GDS, Lucas Silveyra, Maximo Chialvo</p>
     </footer>
-    <script src="./login.html"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>

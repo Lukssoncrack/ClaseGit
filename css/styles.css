@@ -50,9 +50,24 @@ footer{
 footer p{
     align-self: flex-end;
 }
-/*-------------------------------------------------------------------------------------------------*/
+/*--------------------------------login-----------------------------------------------------------------*/
 
-
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 190px;
+    margin-top: 0%;
+    padding: 0%;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+    
+}
 
 /*-------------------------------------------------------------------------------------------------*/
 
