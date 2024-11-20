@@ -34,6 +34,19 @@ ul li a{
    
 }
 
+main h1{
+    display: flex;
+    text-align: center;
+    margin-top: 100px;
+    background-color: bisque;
+
+
+}
+
+.listarecetas{
+
+}
+
 .search-container{
     display: flex;
     justify-content: end;
@@ -41,15 +54,36 @@ ul li a{
 }
 
 footer{
-    position: fixed;
+  
     bottom: 0;
     left: 0;
     width: 100%;
 }
 
 footer p{
+    display: flex;
     align-self: flex-end;
 }
+/*------------------------------JS--Index---------------------------------------------------------------*/
+.fotoReceta{
+
+}
+.fotojs{
+    width: 500px;
+    height: 400px;
+    box-sizing: border-box;
+    border-radius: 10%;
+    border: 3px solid black;
+}
+
+.platos{
+
+}
+
+.platoa{
+
+}
+
 /*--------------------------------login-----------------------------------------------------------------*/
 
 .form{
