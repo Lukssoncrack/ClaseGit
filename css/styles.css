@@ -184,4 +184,37 @@ resultadobusqueda
 
 
 /*---------------------------------------------------------------------------------------
-/*----------------------------------------------------------------*/
+/*----------------------------------------------responsive------------------------------------------------*/
+
+@media(max-width:480px){
+    .h1{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .nave{
+        margin-top: 140px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nav{
+        padding: 5px;
+    }
+    .search-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 52px;
+    }
+    .forming{
+        margin-top:0%;
+    }
+    .calveti{
+        height: 190px;
+    }
+}
