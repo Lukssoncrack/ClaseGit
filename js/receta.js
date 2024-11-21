@@ -46,3 +46,4 @@ function mostrarReceta(receta) {
         categoriasReceta.removeChild(categoriasReceta.lastChild);
     }
 }
+    
