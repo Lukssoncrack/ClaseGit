@@ -1,26 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Detalles de Receta</title>
+    <title>recetas chef</title>
 </head>
 <body>
+   
+
     <header>
+        
+<section>    
         <div class="search-container">
+            <form action="./search-results.html" method="get" class="">
             <input type="text" id="search" placeholder="Buscar...">
-            <button onclick="search()">Buscar</button>
+            <button type="submit">Buscar</button>
+        </form>
         </div>
+</section>          
         <div class="logo"><img src="./img/6c8fac06bf158a157a3123d48635c582 (1).jpg" alt="logo"></div>
+
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="categories.html">Categorías</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Registro</a></li>
+            <li class="nav"><a href="index.html">Home</a></li>
+            <li class="nav"><a href="categories.html">Categorías</a></li>
+            <li class="nav"><a href="login.html">Login</a></li>
+            <li class="nav"><a href="register.html">Registro</a></li>
             </ul>
         </nav>
+
+        
+
     </header>
 
     <main>
@@ -32,10 +43,9 @@
         <div id="receta-categorias"></div>
     </main>
 
-    <footer>
+    <footer class="footerNombres">
         <p>Equipo: Tomas GDS, Lucas Silveyra, Maximo Chialvo</p>
     </footer>
-
     <script src="./js/receta.js"></script>
 </body>
 </html>

@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Document</title>
-
+    <title>recetas chef</title>
 </head>
 <body>
-    <script src="./js/index.js"></script>
+   
+
     <header>
         
+<section>    
+        <div class="search-container">
+            <form action="./search-results.html" method="get" class="">
+            <input type="text" id="search" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+        </form>
+        </div>
+</section>          
         <div class="logo"><img src="./img/6c8fac06bf158a157a3123d48635c582 (1).jpg" alt="logo"></div>
-        
 
         <nav>
             <ul>
@@ -24,11 +31,7 @@
         </nav>
 
         
-        <div class="search-container">
-            <input type="text" id="search" placeholder="Buscar...">
-            <button onclick="search()">Buscar</button>
-        </div>
-        
+
     </header>
 
    
@@ -37,7 +40,7 @@
     </main>
 
     
-    <footer>
+    <footer class="footerNombres">
         <p>Equipo: Tomas GDS, Lucas Silveyra, Maximo Chialvo</p>
     </footer>
     <script src="./js/categories.js"></script>

@@ -25,7 +25,7 @@ fetch('https://dummyjson.com/recipes')
     mass.addEventListener('click', function(){
         for(let i=10;i<20;i++){
             recetas += `<article class="fotoReceta">
-            <img src=${data.recipes[i].image} alt="" ><div>
+            <img class="fotojs" src=${data.recipes[i].image} alt="" ><div>
             <a class="platoa" href="./receta.html?id=${data.recipes[i].id}">
             Plato: ${data.recipes[i].name}</a>
              <p class="difcil">Nivel de dificultad: ${data.recipes[i].difficulty}</p></div>

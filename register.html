@@ -3,33 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css"> 
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>recetas chef</title>
 </head>
 <body>
-    <script src="./js/index.js"></script>
+   
 
     <header>
         
+<section>    
+        <div class="search-container">
+            <form action="./search-results.html" method="get" class="">
+            <input type="text" id="search" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+        </form>
+        </div>
+</section>          
         <div class="logo"><img src="./img/6c8fac06bf158a157a3123d48635c582 (1).jpg" alt="logo"></div>
-        
 
         <nav>
-            <a href="index.html">Home</a>
-            <a href="categories.html">Categorías</a>
-            <a href="login.html">Login</a>
-            <a href="register.html">Registro</a>
-            
+            <ul>
+            <li class="nav"><a href="index.html">Home</a></li>
+            <li class="nav"><a href="categories.html">Categorías</a></li>
+            <li class="nav"><a href="login.html">Login</a></li>
+            <li class="nav"><a href="register.html">Registro</a></li>
+            </ul>
         </nav>
 
         
-        <div class="search-container">
-            <input type="text" id="search" placeholder="Buscar...">
-            <button onclick="search()" e>Buscar</button>
-        </div>
+
+    </header>
 
         
-<section>
+<section class="formsRegistro">
 
     <form action="search-results.html" method="get">
         <label>Nombre:</label>
@@ -58,7 +64,7 @@
     </main>
 
     
-    <footer>
+    <footer class="footerNombres">
         <p>Equipo: Tomas GDS, Lucas Silveyra, Maximo Chialvo</p>
     </footer>
     <script src="./register.html"></script>
