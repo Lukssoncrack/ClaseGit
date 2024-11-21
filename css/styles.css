@@ -4,9 +4,11 @@
     background-color: antiquewhite;
 }
 
+
 .logo img{
     width: 300px;
     border-radius: 80%;
+    
 
 }
 .nav{
@@ -30,13 +32,18 @@ ul{
     justify-content: space-between;
     flex-direction: row;    
     padding: 0%;
+    margin-left: 10px;
+    margin-right: 10px;
   
 }
 
 ul li a{
     color: black;
     text-decoration: none;
-    background-color: aqua;
+    background-color: lightsalmon;
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: bold;
    
 }
 
@@ -47,6 +54,7 @@ ul li a{
     align-items: center;
     margin-top: 100px;
     background-color: bisque;
+    border-radius: 3px;
 
 
 }
@@ -116,6 +124,10 @@ footer p{
     color: black;
     font-size: medium;
 }
+
+.buttonMas{
+   
+}
 /*--------------------------------login-----------------------------------------------------------------*/
 
 
@@ -128,14 +140,14 @@ footer p{
     height: 190px;
     margin-top: 0%;
     padding: 0%;
-    background-color: rgba(240, 255, 255, 0.664);
+    background-color: rgba(255, 160, 122, 0.267);
     width: 250px;
     margin:auto;
     border-radius: 5%;    
 }
 
 .form input{
-    background-color: rgba(240, 255, 255, 0.664);
+    background-color: rgba(255, 160, 122, 0.276);
 }
 
 .bottom{
@@ -162,7 +174,13 @@ footer p{
 
 
 
-/*------------------------------------------------------------------------------------------------*/
+/*------------------------------
+#detalles,js.
+detalels.html
+
+recetas.js 
+resultadobusqueda
+------------------------------------------------------------------*/
 
 
 /*---------------------------------------------------------------------------------------

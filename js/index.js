@@ -31,7 +31,7 @@ fetch('https://dummyjson.com/recipes')
              <p class="difcil">Nivel de dificultad: ${data.recipes[i].difficulty}</p></div>
           </article>`;
           listarecetas.innerHTML=recetas
-        } 
+        }   
     })
     
 })
