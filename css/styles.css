@@ -1,7 +1,6 @@
 /*-------------------------------------------index------------------------------------------------------*/
 *{
     box-sizing: border-box;
-    background-color: antiquewhite;
 }
 
 .logo img{
@@ -9,12 +8,6 @@
     border-radius: 80%;
 
 }
-
-.nav{
-    font-size: larger;
-
-}
-
 
 .logo{
     display: flex;
@@ -41,24 +34,17 @@ ul li a{
    
 }
 
-.h1{
+main h1{
     display: flex;
     text-align: center;
     margin-top: 100px;
-    background-color: lightsalmon;
-    
-
+    background-color: bisque;
 
 
 }
 
 .listarecetas{
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 20px; 
-    justify-content: center;
-    padding: 20px;
-    
+
 }
 
 .search-container{
@@ -80,38 +66,27 @@ footer p{
 }
 /*------------------------------JS--Index---------------------------------------------------------------*/
 .fotoReceta{
-    width: 48%; 
-    box-sizing: border-box; 
-    max-width: 500px; 
-    margin: 0 auto;
+
 }
 .fotojs{
-    width: 100%; 
-    height: auto; 
+    width: 500px;
+    height: 400px;
+    box-sizing: border-box;
     border-radius: 10%;
     border: 3px solid black;
-
 }
 
 .platos{
-    text-align: center; 
-    margin-top: 10px;
+
 }
 
 .platoa{
-    text-decoration: none;
-    font-weight: bold;
+
 }
 
-
-
-
-
-.difcil {
-    color: black;
-    font-size: medium;
-}
 /*--------------------------------login-----------------------------------------------------------------*/
+
+
 
 .form{
     display: flex;
@@ -121,6 +96,8 @@ footer p{
     height: 190px;
     margin-top: 0%;
     padding: 0%;
+
+    
 }
 .bottom{
     display: flex;
@@ -129,9 +106,18 @@ footer p{
     margin-left: 0px;
     
 }
+.footer{
+    margin-top: 300px;
+}
 
-/*-------------------------------------------------------------------------------------------------*/
-
+/*--------------------------------------register -----------------------------------------------------------*/
+.forming{
+    margin-top: 50px;
+}
+.botoni{
+    margin-top: 30px;
+    margin-left: 590px;
+}
 
 /*-------------------------------------------------------------------------------------------------*/
 
@@ -140,11 +126,5 @@ footer p{
 /*------------------------------------------------------------------------------------------------*/
 
 
-/*--------------------------------------register---------------------------------------------------------*/
-/* .formsRegistro{
-    display: flex;
-    margin-top: 400px;
-}
-
-
-/*-------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------
+/*----------------------------------------------------------------*/

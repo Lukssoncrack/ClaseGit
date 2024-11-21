@@ -3,23 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>recetas chef</title>
+    <link rel="stylesheet" href="./css/styles.css"> 
+    <title>Document</title>
 </head>
 <body>
-   
+    <script src="./js/index.js"></script>
 
     <header>
         
-<section>    
-        <div class="search-container">
-            <form action="./search-results.html" method="get" class="">
-            <input type="text" id="search" placeholder="Buscar...">
-            <button type="submit">Buscar</button>
-        </form>
-        </div>
-</section>          
         <div class="logo"><img src="./img/6c8fac06bf158a157a3123d48635c582 (1).jpg" alt="logo"></div>
+        
 
         <nav>
             <ul>
@@ -29,44 +22,34 @@
             <li class="nav"><a href="register.html">Registro</a></li>
             </ul>
         </nav>
-
-        
-
-    </header>
-
-        
-<section class="formsRegistro">
-
-    <form action="search-results.html" method="get">
-        <label>Nombre:</label>
-        <input name="usario" type="text" value="">
-        <label>Email:</label>
-        <input name="email" type="email" value="">
-        <label>Telefono:</label>
-        <input name="Telefono" type="number" value="">
-        <label>Contraseña:</label>
-        <input name="pass" type="password" value="">
-        <p>Confirmar condiciones</p>
-        <label>SI</label>
-        <input type="radio" name="terminos" value="si" checked>
-        <label>NO</label>
-        <input name="radio" name="terminos" value="no">
-        <button type="submit">Enviar</button>
-    </form>
-
-</section>
         
     </header>
 
    
     <main>
-        
+        <form  class="forming" action="./login.html" method="get">
+            
+            <div class="form">
+                     <label>Email:</label>
+                     <input name="email" type="email" id="email" value="">
+                     <div class="invalid-feedback email"></div>
+                     <label>Contraseña:</label>
+                     <input name="pass" type="password" id="password" value="">
+                     <div class="invalid-feedback password"></div>
+                     <p class="claseHobbies"><strong>Acepta Terminos y condiciones?</strong></p>    
+                     <input type="checkbox" name="termino" value="condiciones" >
+                     <p>¿Ya tienes una cuenta? 
+                         <a href="./login.html">Click aqui</a>
+                     </p></div>
+                     <button  class="botoni"  type="submit" class="btn btn-success">ENVIAR</button></div>
+                     <a href="./login.html"></a>
+                 </form>
     </main>
 
     
-    <footer class="footerNombres">
-        <p>Equipo: Tomas GDS, Lucas Silveyra, Maximo Chialvo</p>
+    <footer>
+        <p class="footeri">Equipo: Tomas GDS, Lucas Silveyra, Maximo Chialvo</p>
     </footer>
-    <script src="./register.html"></script>
+    <script src="./js/register.js"></script>
 </body>
 </html>
