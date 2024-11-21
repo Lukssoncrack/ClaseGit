@@ -1,12 +1,16 @@
 /*-------------------------------------------index------------------------------------------------------*/
 *{
     box-sizing: border-box;
+    background-color: antiquewhite;
 }
 
 .logo img{
     width: 300px;
     border-radius: 80%;
 
+}
+.nav{
+    font-size: larger;
 }
 
 .logo{
@@ -34,7 +38,7 @@ ul li a{
    
 }
 
-main h1{
+.h1{
     display: flex;
     text-align: center;
     justify-content: center;
@@ -46,7 +50,12 @@ main h1{
 }
 
 .listarecetas{
-
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center;
+    padding: 20px;
+    
 }
 
 .search-container{
@@ -54,6 +63,15 @@ main h1{
     justify-content: end;
     margin: 10px;
 }
+
+.h1{
+    display: flex;
+    text-align: center;
+    margin-top: 100px;
+    background-color: lightsalmon;
+
+}
+
 
 footer{
   
@@ -68,24 +86,34 @@ footer p{
 }
 /*------------------------------JS--Index---------------------------------------------------------------*/
 .fotoReceta{
-
+    width: 48%; 
+    box-sizing: border-box; 
+    max-width: 500px; 
+    margin: 0 auto;
 }
 .fotojs{
-    width: 500px;
-    height: 400px;
-    box-sizing: border-box;
+
     border-radius: 10%;
     border: 3px solid black;
+    width: 100%; 
+    height: auto; 
 }
 
 .platos{
-
+    text-align: center; 
+    margin-top: 10px;
 }
 
 .platoa{
-
+    text-decoration: none;
+    font-weight: bold;
 }
 
+
+.difcil {
+    color: black;
+    font-size: medium;
+}
 /*--------------------------------login-----------------------------------------------------------------*/
 
 
