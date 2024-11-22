@@ -4,17 +4,17 @@
     background-color: antiquewhite;
 }
 
+
 .logo img{
     width: 300px;
     border-radius: 80%;
+    
 
 }
-
 .nav{
     font-size: larger;
 
 }
-
 
 .logo{
     display: flex;
@@ -30,24 +30,37 @@ ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: row;    
+    padding: 0%;
+    margin-left: 10px;
+    margin-right: 10px;
   
 }
 
 ul li a{
     color: black;
     text-decoration: none;
-    margin-right: 20px;
+    background-color: lightsalmon;
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: bold;
    
+}
+
+a{
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
 }
 
 .h1{
     display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     margin-top: 100px;
-    background-color: lightsalmon;
-    
-
+    background-color: bisque;
+    border-radius: 3px;
 
 
 }
@@ -66,6 +79,15 @@ ul li a{
     justify-content: end;
     margin: 10px;
 }
+
+.h1{
+    display: flex;
+    text-align: center;
+    margin-top: 100px;
+    background-color: lightsalmon;
+
+}
+
 
 footer{
   
@@ -86,11 +108,11 @@ footer p{
     margin: 0 auto;
 }
 .fotojs{
-    width: 100%; 
-    height: auto; 
+
     border-radius: 10%;
     border: 3px solid black;
-
+    width: 100%; 
+    height: auto; 
 }
 
 .platos{
@@ -104,14 +126,17 @@ footer p{
 }
 
 
-
-
-
 .difcil {
     color: black;
     font-size: medium;
 }
+
+.buttonMas{
+   
+}
 /*--------------------------------login-----------------------------------------------------------------*/
+
+
 
 .form{
     display: flex;
@@ -121,7 +146,16 @@ footer p{
     height: 190px;
     margin-top: 0%;
     padding: 0%;
+    background-color: rgba(255, 160, 122, 0.267);
+    width: 250px;
+    margin:auto;
+    border-radius: 5%;    
 }
+
+.form input{
+    background-color: rgba(255, 160, 122, 0.276);
+}
+
 .bottom{
     display: flex;
     align-items: center;
@@ -181,7 +215,64 @@ footer p{
 /* .formsRegistro{
     display: flex;
     margin-top: 400px;
+.footer{
+    margin-top: 300px;
 }
 
+/*--------------------------------------register -----------------------------------------------------------*/
+.forming{
+    margin-top: 50px;
+}
+.botoni{
+    margin-top: 30px;
+    margin-left: 590px;
+}
 
 /*-------------------------------------------------------------------------------------------------*/
+
+
+
+/*------------------------------
+#detalles,js.
+detalels.html
+
+recetas.js 
+resultadobusqueda
+------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------------------
+/*----------------------------------------------responsive------------------------------------------------*/
+
+@media(max-width:480px){
+    .h1{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .nave{
+        margin-top: 140px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nav{
+        padding: 5px;
+    }
+    .search-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 52px;
+    }
+    .forming{
+        margin-top:0%;
+    }
+    .calveti{
+        height: 190px;
+    }
+}
