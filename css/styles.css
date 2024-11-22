@@ -130,7 +130,44 @@ footer p{
     
 }
 
-/*-------------------------------------------------------------------------------------------------*/
+/*-------------------------------------- recetas -----------------------------------------------------------*/
+
+
+#receta-titulo{
+    padding-top: 10%;
+    text-align: center;
+
+}
+
+#receta-imagen{
+     display: block;     
+        margin-left: auto;  
+        margin-right: auto;   
+        width: 500px;
+        height: 500px;
+        border: 3px solid black;
+        border-radius: 10%;
+    
+}
+
+#receta-instrucciones{
+
+    padding-left:  20px;
+    padding-right: 20px;
+
+}
+
+#receta-tiempo{
+
+    padding-left:  20px;
+    padding-right: 20px;
+    
+
+}
+
+
+
+
 
 
 /*-------------------------------------------------------------------------------------------------*/

@@ -1,48 +1,28 @@
-const url = window.location.search;
-const urlParams = new URLSearchParams(url);
-const recetaId = urlParams.get('id'); // Corregí el nombre de la variable
+let queryString = location.search;
 
-if (recetaId) {
-    fetch(`https://dummyjson.com/recipes/${recetaId}`)
+let queryStringObjeto = new URLSearchParams(queryString);
+
+let id = queryStringObjeto.get('id'); 
+
+    fetch(`https://dummyjson.com/recipes/${id}`)
         .then(function (response) {
             return response.json();
         })
         .then(function (data) {
-            mostrarReceta(data);
+            console.log(data)
+            let nombre = document.querySelector('#receta-titulo');
+            nombre.innerText += data.name;
+            let instrucciones =document.querySelector(' #receta-instrucciones');
+            instrucciones.innerText += data.instructions
+            ;
+            let tiempo = document.querySelector(" #receta-tiempo");
+            tiempo.innerText += data.
+            prepTimeMinutes;
+            let imagen = document.querySelector('#receta-imagen');
+            imagen.src = data.image
         })
         .catch(function (error) {
-            console.error("Error, no obtuvimos los datos de la receta");
+            console.error("Error, no obtuvimos los datos de la receta", error);
         });
-} else {
-    console.error("No obtuvimos un id de la receta");
-}
 
-function mostrarReceta(receta) {
-    const nombreReceta = document.getElementById('nombreReceta'); // Ajusté el id
-    nombreReceta.textContent = receta.name;
 
-    const fotoReceta = document.getElementById('fotoReceta'); // Ajusté el id
-    fotoReceta.src = receta.image;
-    fotoReceta.alt = 'Imagen de ' + receta.name; // Cambié `title` por `name`
-
-    const tiempoCoccion = document.getElementById('tiempoCoccion'); // Ajusté el id
-    tiempoCoccion.textContent = receta.cookTimeMinutes || 'No disponible';
-
-    const instruccionesReceta = document.getElementById('instruccionesReceta'); // Ajusté el id
-    instruccionesReceta.textContent = receta.instructions || 'No disponible';
-
-    const categoriasReceta = document.getElementById('categoriasReceta'); // Ajusté el id
-    categoriasReceta.innerHTML = '';
-
-    receta.categories.forEach(function (categoria) {
-        const link = document.createElement('a');
-        link.href = `./categories.html?category=` + categoria;
-        link.textContent = categoria; // Corregí `categorla` a `categoria`
-        categoriasReceta.appendChild(link);
-        categoriasReceta.appendChild(document.createTextNode(', '));
-    });
-
-    if (categoriasReceta.lastChild) {
-        categoriasReceta.removeChild(categoriasReceta.lastChild);
-    }
-}
