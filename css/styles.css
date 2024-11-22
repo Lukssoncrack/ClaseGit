@@ -47,6 +47,12 @@ ul li a{
    
 }
 
+a{
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+}
+
 .h1{
     display: flex;
     text-align: center;

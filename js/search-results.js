@@ -1,5 +1,5 @@
 let urlParams = new URLSearchParams(window.location.search);
-let searchTerm = urlParams.get('buscador'); 
+let searchTerm = urlParams.get('q'); 
 
 let searchTermElement = document.getElementById('search-term');
 searchTermElement.textContent = `Resultados de búsqueda para: "${searchTerm}"`;
