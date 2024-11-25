@@ -1,36 +1,36 @@
-let urlParams = new URLSearchParams(window.location.search);
-let searchTerm = urlParams.get('q'); 
+let queryString = location.search;
 
-let searchTermElement = document.getElementById('search-term');
-searchTermElement.textContent = `Resultados de búsqueda para: "${searchTerm}"`;
+let queryStringObjeto = new URLSearchParams(queryString);
 
-function searchRecipes() {
-    fetch(`https://dummyjson.com/recipes/search?q=${searchTerm}`)
-        .then(response => response.json())
-        .then(data => {
-            let results = data.recipes;
-            displayResults(results);
-        })
-        .catch(error => {
-            console.error('Error al realizar la búsqueda:', error);
-            let resultsContainer = document.getElementById('search-results');
-            resultsContainer.innerHTML = '<p>Error al cargar los resultados de búsqueda.</p>';
-        });
-}
-function displayResults(results) {
-    let resultsContainer = document.getElementById('search-results');
-    resultsContainer.innerHTML = ''; 
+let extraer = queryStringObjeto.get('query'); 
 
-    if (results.length === 0) {
-        resultsContainer.innerHTML = '<p>No se encontraron resultados.</p>';
-    } else {
-        results.forEach(recipe => {
-            ;
-        });
-    }
-}
+let containerRecetas = document.querySelector('.seccion_detalles')
+
+    fetch(`https://dummyjson.com/recipes/search?q=${extraer}`)
+
+        .then(function (response) {
+            return response.json();
+        }) 
 
 
-searchRecipes();
+.then (function(data){
+    console.log(data)
+    let recetas = data.recipes
+    for (let i=0;i<recetas.length; i++){
 
+        containerRecetas.innerHTML += ` <article class ="recetas">
+        <h3 class="buscar-nombre"> ${recetas[i].name} </h3>
 
+         <img alt="" src=${recetas[i].image} /> 
+
+         <p class="bucas-receta"> ${recetas[i].difficulty} </p>
+
+            <a href=""receta.html?id=${recetas[i].id}"> Ver detalles </a>
+           
+            </article>`
+        }
+})
+.catch(function(error){
+
+    console.log("Error cargando recetas", error)
+});
