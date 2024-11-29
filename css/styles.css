@@ -22,9 +22,7 @@
     padding: 0%;
 }
 
-header{
-     height: 300px; 
-}
+
 
 ul{
     list-style: none;
@@ -140,12 +138,11 @@ footer p{
 }
 
 
-.form{
+.forming, .fondoForms{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 190px;
     margin-top: 0%;
     padding: 0%;
     background-color: rgba(255, 160, 122, 0.267);
@@ -253,15 +250,15 @@ footer p{
 /*--------------------------------------register -----------------------------------------------------------*/
 .forming{
     margin-top: 50px;
- 
+    width: 100%;
 }
 .botoni{
-    margin-top: 30px;
-    margin-left: 590px;
+    margin: auto;
 }
 footero{
     margin-top: 200px;
 }
+
 /*---------------------------------------- Search---------------------------------------------------------*/
 
 .recetas{
@@ -283,14 +280,20 @@ resultadobusqueda
 
 @media(max-width:480px){
     .h1{
-        display: none;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
     }
     .logo{
     width: 50px;
     height: 50px;
-    display: flex;
-        align-items: center;
        
+    }
+    .noc{
+        margin-top: 30px;
+        height: 50px;
+        margin-left: 300px;
+        height: 140px;
     }
     .nave{
         margin-top: 140px;
@@ -312,7 +315,7 @@ resultadobusqueda
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 70%;
+        margin-top: px;
     }
     .forming{
         margin-top:0%;
@@ -320,6 +323,30 @@ resultadobusqueda
     .calveti{
         height: 190px;
     }
+    .listarecetas{
+        margin-top: 76px;
+    }
+    .noci{
+        height: 100px;
+        margin-left: 300px;
+        margin-top: 10px;
+
+    }
+    .bana{
+        margin-top: 150px;
+    }
+    .bottom{
+        margin-top: 0px;
+    }
+   
+    .form{
+        margin-top: 230px;
+    }
+    .lop{
+        margin-top: 160px;
+    }
+
+
 }
 
 
