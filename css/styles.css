@@ -361,7 +361,10 @@ resultadobusqueda
 
     text-align: center;
     font-size: 35px;
-    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 25px;
 }
 
 .dificultad{
