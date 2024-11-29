@@ -226,6 +226,9 @@ footer p{
     
 
 }
+.category{
+    margin-top: 130px;
+}
 .categories_li{
     background-color: rgba(105, 105, 105, 0.292);
     color: rgb(0, 0, 0);

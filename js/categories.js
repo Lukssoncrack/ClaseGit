@@ -13,7 +13,7 @@ fetch('https://dummyjson.com/recipes/tags')
     for(let i=0; i <data.length; i++){
         comidas +=`
         <article class= "cate">
-           <a href="./categories.html?categories=${data[i]}" class="categories_li">${data[i]}</a>
+           <a href="./category.html?tags=${data[i]}" class="categories_li">${data[i]}</a>
            </article> `;
 
     }
