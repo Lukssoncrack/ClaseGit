@@ -342,6 +342,8 @@ resultadobusqueda
 .detalles{
      margin-top: 3%;
      text-align: center;
+     width: 100%;
+     display: block;
 }
 
 .imgDC{ 
