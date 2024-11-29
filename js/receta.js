@@ -26,3 +26,17 @@ let id = queryStringObjeto.get('id');
         });
 
 
+        let input = document.querySelector('.input-buscador')
+     
+        let formulario = document.querySelector('.formulario-busqueda')
+     
+        formulario.addEventListener("submit", function (evento) {
+            evento.preventDefault(); 
+        
+        if ( input.value.length < 3) { 
+                alert("Por favor ponga mas de 3 letras "); 
+        
+            } else {
+                this.submit()
+            }
+        })

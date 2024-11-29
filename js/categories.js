@@ -1,4 +1,3 @@
-
 fetch('https://dummyjson.com/recipes/tags')
 
 .then(function(response){
@@ -25,3 +24,17 @@ fetch('https://dummyjson.com/recipes/tags')
     console.log("No se pudo cargar",error);
 });
 
+let input = document.querySelector('.input-buscador')
+     
+    let form = document.querySelector('.formulario-busqueda')
+ 
+    form.addEventListener("submit", function (evento) {
+        evento.preventDefault(); 
+    
+    if ( input.value.length < 3) { 
+            alert("Por favor ponga mas de 3 letras "); 
+    
+        } else {
+            this.submit()
+        }
+    })

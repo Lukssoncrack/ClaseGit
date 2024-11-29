@@ -18,7 +18,7 @@ fetch(`https://dummyjson.com/recipes/tag/${detalle}`)
         <article class="article_foto_plato">
         <a class="plato" href="./receta.html?id=${data.recipes[i].id}">
          ${data.recipes[i].name}</a>
-         
+
         <img class="imgDC" src=${data.recipes[i].image} alt = "" >
         <p class="dificultad" >Dificultad: ${data.recipes[i].difficulty}</p></article>
         </article>`} 
@@ -32,3 +32,17 @@ fetch(`https://dummyjson.com/recipes/tag/${detalle}`)
     console.log(error)
 })
 
+let input = document.querySelector('.input-buscador')
+     
+    let formulario = document.querySelector('.formulario-busqueda')
+ 
+    formulario.addEventListener("submit", function (evento) {
+        evento.preventDefault(); 
+    
+    if ( input.value.length < 3) { 
+            alert("Por favor ponga mas de 3 letras "); 
+    
+        } else {
+            this.submit()
+        }
+    })

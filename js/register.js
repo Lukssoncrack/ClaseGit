@@ -29,3 +29,17 @@ formulario.addEventListener("submit", function (evento) {
         formulario.submit(); 
     }
 }); 
+let input = document.querySelector('.input-buscador')
+     
+    let form = document.querySelector('.formulario-busqueda')
+ 
+    form.addEventListener("submit", function (evento) {
+        evento.preventDefault(); 
+    
+    if ( input.value.length < 3) { 
+            alert("Por favor ponga mas de 3 letras "); 
+    
+        } else {
+            this.submit()
+        }
+    })
