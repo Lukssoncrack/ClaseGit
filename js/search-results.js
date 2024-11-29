@@ -19,13 +19,14 @@ let containerRecetas = document.querySelector('.seccion_detalles')
     for (let i=0;i<recetas.length; i++){
 
         containerRecetas.innerHTML += ` <article class ="recetas">
+    
         <h3 class="buscar-nombre"> ${recetas[i].name} </h3>
 
-         <img alt="" src=${recetas[i].image} /> 
+         <img class="buscar-foto" alt="" src=${recetas[i].image} /> 
 
-         <p class="bucas-receta"> ${recetas[i].difficulty} </p>
+         <p class="buscas-receta"> Dificultad:  ${recetas[i].difficulty} </p>
 
-            <a href=""receta.html?id=${recetas[i].id}"> Ver detalles </a>
+            <a  class= "detalles"   href="receta.html?id=${recetas[i].id}"> Ver detalles </a>
            
             </article>`
         }
